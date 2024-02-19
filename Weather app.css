@@ -9,7 +9,8 @@ body{
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg , #00feba , #5b548a);
+    background:url(images/backgroung.jpg);
+    background-size:cover;
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
