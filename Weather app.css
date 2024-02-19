@@ -9,7 +9,7 @@ body{
 .card{
     width: 90%;
     max-width: 470px;
-    background:url(images/backgroung.jpg);
+    background:url(images/background.jpg);
     background-size:cover;
     color: #fff;
     margin: 100px auto 0;
