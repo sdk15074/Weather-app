@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,19 @@
         </div>
         <div class="weather">
             <img src="images/rain.png" class="weather-icon">
+            </div>
             <h1 class="temp">22°C</h1>
-            <h2 class="city"> New York</h2>
+            
+    <!----------------------changing tempreture in °C °F °K------------------->
+
+            <div class="temp-buttons">
+                <select id="temp-unit" onchange="changeTemperatureUnit()">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+            <h3 class="city"> New York</h3>
             <div class="details">
                 <div class="col">
                     <img src="images/humidity.png">
@@ -36,6 +47,6 @@
         </div>
     </div>
 
-    
+    <script src="weather.js"></script>
 </body>
 </html>
