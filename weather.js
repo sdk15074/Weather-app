@@ -20,6 +20,9 @@ async function checkWheather(city){
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
+    /*--------------chaning images according to weather------------*/
+
+
     if(data.weather[0].main =="Clear"){
         weatherIcon.src ="images/clear.png";
     }
@@ -44,6 +47,9 @@ searchBtn.addEventListener("click", ()=>{
     checkWheather(searchBox.value);
 
 })
+
+/*---------------changing temperature to °C ,°F ,°K-----------------*/
+
 function changeTemperatureUnit() {
     var tempElement = document.querySelector('.temp');
     var currentTemp = parseFloat(tempElement.textContent);
