@@ -44,4 +44,27 @@ searchBtn.addEventListener("click", ()=>{
     checkWheather(searchBox.value);
 
 })
+function changeTemperatureUnit() {
+    var tempElement = document.querySelector('.temp');
+    var currentTemp = parseFloat(tempElement.textContent);
+    var unitSelector = document.getElementById('temp-unit');
+    var selectedUnit = unitSelector.options[unitSelector.selectedIndex].value;
+    var newTemp;
+
+    switch(selectedUnit) {
+        case 'C':
+            newTemp = currentTemp;
+            break;
+        case 'F':
+            newTemp = (currentTemp * 9/5) + 32;
+            break;
+        case 'K':
+            newTemp = currentTemp + 273.15;
+            break;
+        default:
+            return; 
+    }
+
+    tempElement.textContent = newTemp.toFixed(2) + '°' + selectedUnit;
+}
 
